@@ -1,4 +1,66 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
+.header{
+    display: flex;
+    background-color: #5e5e5e;
+    height: 50px;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_desktop{
+    display: none;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #cdcdcd;
+}
+
+@media only screen and (min-width: 1000px){
+    .header{
+        flex-direction: row-reverse;
+    }
+    .menu_hamb{
+        display: none;
+    }
+
+    .menu_desktop{
+        display: flex;
+        flex-grow: 0.4;
+        justify-content: space-between;
+    }
+
+    .banner_ipad{
+        display: none;
+    }
+
+    .banner_smartphone{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .banner_desktop{
+        display: none;
+    }
+
+    .banner_smartphone{
+        display: none;
+    }
+}
+
+.contenedor_banner{
+    width: 100vw;
+}
+
+.banner{
+    width: 100vw;
+}
+
 

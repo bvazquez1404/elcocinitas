@@ -9,5 +9,58 @@
 </head>
 <body>
     
+    <header class="header">
+
+        <img src="img/menu_hamb.svg" alt="menu" class="menu_hamb">
+    
+        <nav class="menu_desktop">
+            <a href="#">Recetas</a>
+            <a href="#">¿Quienes Somos?</a>
+            <a href="#">Contactar</a>
+            <a href="#">Iniciar Sesión</a>
+        </nav>
+        <nav class="logo">
+            <a href="#" class="logotipo">
+                <img src="img/logo.svg" alt="logo" class="logo">
+            </a>
+        </nav>
+
+    </header>
+
+    <section class="contenedor_banner">
+
+        <picture class="banner_desktop">
+            
+            <source srcset="
+            /img/desktop/banner_index_desktop@3x.webp"
+            media="(min-width: 1000px)"
+            >
+            <img src="" class="banner" alt="Cuchara">
+            <source srcset="./img/desktop">
+        </picture>
+        
+        <picture class="banner_ipad">
+            <source srcset="
+            /img/ipad/banner_index_ipad@2x.webp"
+            media="(min-width: 768px)"
+            >
+            <img src="" class="banner" alt="Cuchara">
+            <source srcset="./img/ipad">
+        </picture>
+
+        <picture class="banner_smartphone">
+            <source srcset="
+            /img/smartphone/banner_index_smartphone.webp"
+            media="(min-width: 1px)"
+            >
+            <img src="" class="banner" alt="Cuchara">
+            <source srcset="./img/smartphone">
+        </picture>
+
+
+
+    </section>
+
+
 </body>
 </html>
