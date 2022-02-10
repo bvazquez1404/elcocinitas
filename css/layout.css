@@ -27,32 +27,15 @@ a:hover{
     .header{
         flex-direction: row-reverse;
     }
+
     .menu_hamb{
         display: none;
     }
 
     .menu_desktop{
         display: flex;
-        flex-grow: 0.4;
+        flex-grow: 0.35;
         justify-content: space-between;
-    }
-
-    .banner_ipad{
-        display: none;
-    }
-
-    .banner_smartphone{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 999px){
-    .banner_desktop{
-        display: none;
-    }
-
-    .banner_smartphone{
-        display: none;
     }
 }
 
@@ -62,6 +45,24 @@ a:hover{
 
 .banner{
     width: 100vw;
+    background-color: rgb(133, 83, 83);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+main h1{
+    color: #5e5e5e;
+    font-size: 28px;
+    padding-top: 60px;
+}
+
+.texto{
+    width: 65vw;
+    text-align: center;
+    color:#5e5e5e;
+}
