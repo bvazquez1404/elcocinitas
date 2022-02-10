@@ -5,6 +5,7 @@
     display: flex;
     background-color: #5e5e5e;
     height: 50px;
+    width: 100vw;
     padding: 0px 20px;
     align-items: center;
     justify-content: space-between;
