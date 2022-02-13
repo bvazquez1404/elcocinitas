@@ -16,8 +16,8 @@
         <nav class="menu_desktop">
             <a href="recetas.html">Recetas</a>
             <a href="quienes_somos.html">¿Quienes Somos?</a>
-            <a href="#">Contactar</a>
-            <a href="#">Iniciar Sesión</a>
+            <a href="contactar.html">Contactar</a>
+            <a href="login.html">Iniciar Sesión</a>
         </nav>
         <nav class="logo">
             <a href="index.html" class="logotipo">
@@ -28,10 +28,20 @@
     </header>
 
     <picture>
-        <source srcset="./img/desktop/banner_quienes_desktop@3x.webp" media="(min-width: 1000px)">
-        <source srcset="./img/ipad/banner_quienes_ipad@2x.webp" media="(min-width: 768px)">
-        <source srcset="./img/smartphone/banner_quienes_smartphone.webp" media="(min-width: 200px)">
-        <img src="./img/smartphone/banner_quienes_smartphone.webp" alt="Cuchara" class="banner">
+        <source srcset="
+            ./img/smartphone/banner_quienes_smartphone.webp 1x,
+            ./img/smartphone/banner_quienes_smartphone@2x.webp 2x,
+            ./img/smartphone/banner_quienes_smartphone@3x.webp 3x"
+            media="(min-width: 200px) and (max-width: 767px)">
+        <source srcset="
+            ./img/ipad/banner_quienes_ipad.webp 1x,
+            ./img/ipad/banner_quienes_ipad@2x.webp 2x"
+            media="(min-width: 768px) and (max-width: 1023px)">
+        <source srcset="
+            ./img/desktop/banner_quienes_desktop.webp 1x,
+            ./img/desktop/banner_quienes_desktop@2x.webp 2x"
+            media="(min-width: 1024px) and (max-width: 2000px)">
+            <img src="" alt="Cocinero" class="banner">
     </picture>
 
     <main>

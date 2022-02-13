@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,25 +27,21 @@
 
     </header>
 
-    <picture>
-        <source srcset="
-        ./img/smartphone/banner_recetas_smartphone.webp 1x,
-        ./img/smartphone/banner_recetas_smartphone@2x.webp 2x,
-        ./img/smartphone/banner_recetas_smartphone@3x.webp 3x"
-        media="(min-width: 200px) and (max-width: 767px)">
-    <source srcset="
-        ./img/ipad/banner_recetas_ipad.webp 1x,
-        ./img/ipad/banner_recetas_ipad@2x.webp 2x"
-        media="(min-width: 768px) and (max-width: 1023px)">
-    <source srcset="
-        ./img/desktop/banner_recetas_desktop.webp 1x,
-        ./img/desktop/banner_recetas_desktop@2x.webp 2x"
-        media="(min-width: 1024px) and (max-width: 2000px)">
-        <img src="" alt="Cocinero" class="banner">
-    </picture>
-
     <main>
-        <h1 class="titulo">Recetas</h1>
+        <h1 class="titulo login">Inicia sesión</h1>
+        <section class="contenedor_login">
+            <input type="email" class="input" placeholder="Email">
+            <input type="password" class="input" placeholder="Password">
+            <input type="submit" value="Enviar" class="submit">
+        </section>
+
+        <section class="sugerencia_registro">
+            <p class="texto">
+                ¿No tienes cuenta?<br>
+                <a href="registrarse.html" class="link">¡Crea una ahora!</a>
+            </p>
+        </section>
+        
     </main>
     
     
