@@ -23,20 +23,57 @@ a:hover{
     color: #cdcdcd;
 }
 
+#click{
+	display: none;
+}
+
+				
+#click:checked ~ .menu_desktop{
+	width: 100vw;
+	height: 92.5vh;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	background-color:#5e5e5e;
+	padding-top: 50px;
+}
+
+.links{
+	display: flex;
+	height: 40vh;
+	width: 50vw;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0px;
+}
+
 @media only screen and (min-width: 1024px){
     .header{
         flex-direction: row-reverse;
     }
 
-    .menu_hamb{
-        display: none;
-    }
+	.menu_desplegable{
+		display: none;
+	}
 
-    .menu_desktop{
-        display: flex;
-        flex-grow: 0.35;
-        justify-content: space-between;
-    }
+	.menu_desktop{
+		display: block;
+		flex-grow: 0.35;
+	}
+
+	.links{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	} 
+    
+    label{
+		display: none;
+	}
 }
 
 .contenedor_banner{
@@ -86,6 +123,10 @@ main h1{
     border: 0.3px;
     color: white;
     background-color: #385876;
+}
+
+.submit:hover{
+    color:#b0b0b0;
 }
 
 .contenedor_login{

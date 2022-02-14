@@ -11,14 +11,23 @@
 
     <header class="header">
 
-            <img src="img/menu_hamb.svg" alt="menu" class="menu_hamb">
-    
+        <div class="menu_desplegable">
+            <label for="click" class="click">
+                <img src="img/menu_hamb.svg" alt="menu">
+            </label>
+        </div>
+
+        <input id="click" type="checkbox">
+
         <nav class="menu_desktop">
-            <a href="recetas.html">Recetas</a>
-            <a href="quienes_somos.html">¿Quienes Somos?</a>
-            <a href="contactar.html">Contactar</a>
-            <a href="login.html">Iniciar Sesión</a>
+            <ul class="links">
+                <li class="link_mobil"><a href="recetas.html">Recetas</a></li>
+                <li class="link_mobil"><a href="quienes_somos.html">¿Quienes Somos?</a></li>
+                <li class="link_mobil"><a href="contactar.html">Contactar</a></li>
+                <li class="link_mobil"><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
         </nav>
+
         <nav class="logo">
             <a href="index.html" class="logotipo">
                 <img src="img/logo.svg" alt="logo" class="logo">
