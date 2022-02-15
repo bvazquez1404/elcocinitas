@@ -1,2 +1,43 @@
 /* CSS COLOR */
 /* **************************************************************** */
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #cdcdcd;
+}
+
+.header{
+    background-color: #5e5e5e;
+}
+
+#click:checked ~ .menu_desktop{
+    background-color:#5e5e5e;
+}
+
+main h1{
+    color: #5e5e5e;
+}
+
+.texto{
+    color:#5e5e5e;
+}
+
+.submit{
+    color: white;
+    background-color: #385876;
+}
+
+.submit:hover{
+    color:#b0b0b0;
+}
+
+.link{
+    color:#414FD0;
+}
+
+.contacto{
+    color:#5e5e5e;
+}

@@ -3,7 +3,6 @@
 
 .header{
     display: flex;
-    background-color: #5e5e5e;
     height: 50px;
     width: 100vw;
     padding: 0px 20px;
@@ -15,19 +14,9 @@
     display: none;
 }
 
-a{
-    color: white;
-}
-
-
-a:hover{
-    color: #cdcdcd;
-}
-
 #click{
 	display: none;
 }
-
 				
 #click:checked ~ .menu_desktop{
 	width: 100vw;
@@ -37,7 +26,6 @@ a:hover{
 	position: absolute;
 	top: 50px;
 	left: 0;
-	background-color:#5e5e5e;
 	padding-top: 50px;
 }
 
@@ -49,6 +37,7 @@ a:hover{
 	justify-content: space-between;
 	flex-direction: column;
 	padding: 0px;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 1024px){
@@ -70,6 +59,7 @@ a:hover{
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
+        font-size: 16px;
 	} 
     
     label{
@@ -93,7 +83,6 @@ main{
 }
 
 main h1{
-    color: #5e5e5e;
     font-size: 28px;
     padding-top: 15px;
 }
@@ -101,7 +90,6 @@ main h1{
 .texto{
     width: 65vw;
     text-align: center;
-    color:#5e5e5e;
     line-height: 23px;
 }
 
@@ -122,12 +110,6 @@ main h1{
     height: 36px;
     border-radius: 5px;
     border: 0.3px;
-    color: white;
-    background-color: #385876;
-}
-
-.submit:hover{
-    color:#b0b0b0;
 }
 
 .contenedor_login{
@@ -148,16 +130,9 @@ main h1{
     justify-content: space-between;
 }
 
-.link{
-    color:#414FD0;
-}
-
 @media only screen and (min-width: 768px){
     .input{
         width: 420px;
     }
 }
 
-.contacto{
-    color:#5e5e5e;
-}
