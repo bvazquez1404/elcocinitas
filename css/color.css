@@ -4,6 +4,7 @@
 /* VARIABLES */
 :root{
     --gris_menu: #5e5e5e;
+    --gris_menu_opacidad: rgba(94, 94, 94, 0.9);
     --color_hover: #cdcdcd;
     --azul_link: #414FD0;
 }
@@ -23,7 +24,7 @@ a:hover{
 }
 
 #click:checked ~ .menu_desktop{
-    background-color: var(--gris_menu);
+    background-color: var(--gris_menu_opacidad);
 }
 
 main h1{
