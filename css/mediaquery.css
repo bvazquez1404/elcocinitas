@@ -2,24 +2,63 @@
 /* **************************************************************** */
 
 /* ****************** */
-/* *** Smartphone *** */
-@media only screen and (min-device-width: 320px) and (orientation: portrait){
 
+@media only screen and (max-width: 1023px){
+    #click:checked ~ .menu_desktop{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50px;    
+        left: 0;
+        padding-top: 50px;
+        opacity: 90%;
+    }
+
+    .links{
+        display: flex;
+        height: 40vh;
+        width: 50vw;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
+        font-size: 20px;
+    }
 }
-/* *************** */
-/* *** Tablet *** */
-/* Vertical */
-@media only screen and (min-device-width: 768px) and (orientation:portrait){
 
+
+@media only screen and (min-width: 1024px){
+    .header{
+        flex-direction: row-reverse;
+    }
+
+	.menu_desplegable{
+		display: none;
+	}
+
+	.menu_desktop{
+		display: block;
+        flex-grow: 0.35;
+	}
+
+	.links{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+        font-size: 16px;
+
+	} 
+    
+    label{
+		display: none;
+	}
 }
 
-/* Horizontal */
-@media only screen and (min-device-width: 1024px) and (orientation:landscape){
-
-}
-
-/* **************** */
-/* *** Desktop *** */
-@media only screen and (min-width: 1100px){
-    /* cambio de nav */
+@media only screen and (min-width: 768px){
+    .input{
+        width: 420px;
+    }
 }
