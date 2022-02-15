@@ -1,28 +1,37 @@
 /* CSS COLOR */
 /* **************************************************************** */
 
+/* VARIABLES */
+:root{
+    --gris_menu: #5e5e5e;
+    --color_hover: #cdcdcd;
+    --azul_link: #414FD0;
+}
+
+
+/* ************************************* */
 a{
     color: white;
 }
 
 a:hover{
-    color: #cdcdcd;
+    color: var(--color_hover);
 }
 
 .header{
-    background-color: #5e5e5e;
+    background-color: var(--gris_menu);
 }
 
 #click:checked ~ .menu_desktop{
-    background-color:#5e5e5e;
+    background-color: var(--gris_menu);
 }
 
 main h1{
-    color: #5e5e5e;
+    color: var(--gris_menu);
 }
 
 .texto{
-    color:#5e5e5e;
+    color: var(--gris_menu);
 }
 
 .submit{
@@ -35,9 +44,9 @@ main h1{
 }
 
 .link{
-    color:#414FD0;
+    color: var(--azul_link);
 }
 
 .contacto{
-    color:#5e5e5e;
+    color: var(--gris_menu);
 }
