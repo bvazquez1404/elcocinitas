@@ -2,5 +2,17 @@
 /* **************************************************************** */
 
 @font-face {
-    
+    font-family: 'sans-serif';
+    src: url('../font/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../font/sourcesanspro-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'sans-serif-bold';
+    src: url('../font/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('../font/sourcesanspro-bold-webfont.woff') format('woff');
+}
+
+*{
+    font-family: 'sans-serif';
 }
