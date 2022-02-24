@@ -38,13 +38,34 @@
 
     <main>
         <h1 class="titulo login">Crea una cuenta</h1>
-        <form class="contenedor_registro">
-            <input type="text" class="input" placeholder="Nombre">
-            <input type="text" class="input" placeholder="Apellidos">
-            <input type="email" class="input" placeholder="Email">
-            <input type="password" class="input" placeholder="Password">
-            <input type="password" class="input" placeholder="Repeat Password">
-            <input type="submit" value="Enviar" class="submit">
+        <form  action="login.html" class="contenedor_registro" id="form_registro" method="post">
+            
+            <div class="grupo_formulario" id="grupo_nombre">
+                <input type="text" class="input" placeholder="Nombre*" id="nombre" name="nombre">
+                <article class="grupo_formulario-error" id="grupo_formulario-error">Este campo solo puede contener letras</article>
+            </div>
+            
+            <div class="grupo_formulario" id="grupo_apellidos">
+                <input type="text" class="input" placeholder="apellidos*" id="apellidos" name="apellidos">
+                <article class="grupo_formulario-error" id="grupo_formulario-error">Este campo solo pueden contener letras</article>
+            </div>
+
+            <div class="grupo_formulario" id="grupo_email">
+                <input type="email" class="input" placeholder="Email*" id="email" name="email">
+                <article class="grupo_formulario-error" id="grupo_formulario-error">El email introducido no es válido</article>
+            </div>
+
+            <div class="grupo_formulario" id="grupo_password">
+                <input type="password" class="input" placeholder="Password*" id="password" name="password" required>
+                <article class="grupo_formulario-error" id="grupo_formulario-error">La contraseña debe contener letras mayúsculas y minúsculas, números y carácteres especiales</article>
+            </div>
+
+            <div class="grupo_formulario" id="grupo_repeat_password">
+                <input type="password" class="input" placeholder="Repeat Password*" id="repeat_password" name="repeat_password" required>
+                <article class="grupo_formulario-error" id="grupo_formulario-error">Las contraseñas no coinciden</article>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit" id="submit">
         </form>
 
         <section class="sugerencia_registro">
@@ -53,9 +74,9 @@
                 <a href="login.html" class="link">¡Inicia sesión!</a>
             </p>
         </section>
-        
+    
     </main>
     
-    
+    <script src="validacion_registro.js"></script>
 </body>
 </html>

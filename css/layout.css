@@ -76,12 +76,31 @@ main h1{
 .contenedor_registro{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 380px;
+    width: 250px;
+    height: 500px;
     align-items: center;
     justify-content: space-between;
 }
 
 label{
     cursor: pointer;
+}
+
+.grupo_formulario-error{
+    text-align: center;
+    display: none;
+    font-size: 14px;
+}
+
+.grupo_formulario-error-activo{
+    display: block;
+    color: #bb2929;
+}
+
+.grupo_formulario-correcto .input{
+    border: 2px solid #1ed12d;
+}
+
+.grupo_formulario-incorrecto .input{
+    border: 2px solid #bb2929;
 }
