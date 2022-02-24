@@ -38,17 +38,20 @@
 
     <main>
         <h1 class="titulo login">Inicia sesión</h1>
-        <form class="contenedor_login">
-            <div class="grupo_formulario">
+        <form action="usuario.html" class="contenedor_login" id="form_login">
+
+            <div class="grupo_formulario" id="grupo_email">
                 <input type="email" class="input" placeholder="Email" id="email" name="email">
+                <article class="grupo_formulario-error" id="grupo_formulario-error">El email introducido no es válido</article>
             </div>
 
-            <div class="grupo_formulario">
+            <div class="grupo_formulario" id="grupo_password">
                 <input type="password" class="input" placeholder="Password" id="password" name="password">
+                <article class="grupo_formulario-error" id="grupo_formulario-error">La contraseña introducida no es válida</article>
             </div>
             
             <div class="contenedor_submit">
-                <input type="submit" value="Enviar" class="submit">
+                <input type="submit" value="Enviar" class="submit" id="submit">
             </div>
             
         </form>
@@ -62,6 +65,7 @@
         
     </main>
     
+    <script src="validacion_login.js"></script>
     
 </body>
 </html>
