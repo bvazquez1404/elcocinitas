@@ -67,23 +67,25 @@ main h1{
 .contenedor_login{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 180px;
+    width: 250px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contenedor_registro{
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 500px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 label{
     cursor: pointer;
+}
+
+.grupo_formulario{
+    padding: 10px;
 }
 
 .grupo_formulario-error{
@@ -103,4 +105,8 @@ label{
 
 .grupo_formulario-incorrecto .input{
     border: 2px solid #bb2929;
+}
+
+.contenedor_submit{
+    padding-top: 10px;
 }
